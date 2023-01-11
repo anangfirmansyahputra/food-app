@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 30,
         marginHorizontal: 30,
+        marginBottom: 20,
         backgroundColor: "#fff",
         paddingVertical: 10,
         paddingHorizontal: 15,

@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Image } from "react-native";
+import { useState } from "react";
+import { Image, Text } from "react-native";
 import drink from "../assets/icon/drink.png";
 import menu from "../assets/icon/menu.png";
 import myfood from "../assets/icon/myfood.png";
@@ -23,6 +24,8 @@ const Icon = ({ iconUrl }) => {
 };
 
 export default function MyTab() {
+    const [index, setIndex] = useState(1);
+
     return (
         <Tab.Navigator
             initialRouteName="HomeStack"
@@ -33,23 +36,23 @@ export default function MyTab() {
             <Tab.Screen
                 name="HomeStack"
                 component={HomeStack}
-                options={{
-                    tabBarIcon: ({}) => <Icon iconUrl={menu} />,
-                }}
+                options={({ route }) => ({
+                    tabBarIcon: ({ focused }) => <Icon iconUrl={menu} />,
+                })}
             />
             <Tab.Screen
                 name="Drink"
                 component={Drink}
-                options={{
+                options={({ route }) => ({
                     tabBarIcon: ({}) => <Icon iconUrl={drink} />,
-                }}
+                })}
             />
             <Tab.Screen
                 name="MyFood"
                 component={MyFood}
-                options={{
+                options={({ route }) => ({
                     tabBarIcon: ({}) => <Icon iconUrl={myfood} />,
-                }}
+                })}
             />
         </Tab.Navigator>
     );

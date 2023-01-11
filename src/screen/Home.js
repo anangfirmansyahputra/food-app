@@ -1,5 +1,5 @@
 import { useFonts } from "expo-font";
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text } from "react-native";
+import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, View } from "react-native";
 import SearchInput from "../components/SearchInput";
 import { menu } from "../assets/menu";
 import MenuItem from "../components/MenuItem";
@@ -24,9 +24,10 @@ export default function Home() {
                 data={menu}
                 renderItem={({ item }) => <MenuItem data={item} />}
                 keyExtractor={(item) => item.id}
-                columnWrapperStyle={{ justifyContent: "space-between" }}
                 numColumns={2}
-                contentContainerStyle={styles.flatListContainer}
+                columnWrapperStyle={{ justifyContent: "space-between", marginTop: 40 }}
+                contentContainerStyle={{ paddingHorizontal: 20 }}
+                ListFooterComponent={<View style={{ height: 20 }} />}
             />
         </SafeAreaView>
     );
@@ -44,11 +45,5 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         fontFamily: "Eczar",
         letterSpacing: 4,
-    },
-    flatListContainer: {
-        flex: 1,
-        paddingHorizontal: 20,
-        marginTop: 50,
-        paddingBottom: 20,
     },
 });

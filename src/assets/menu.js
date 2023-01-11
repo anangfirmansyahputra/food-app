@@ -1,9 +1,15 @@
+import avocadosalad from "./img/avocadosalad.png";
+import cornsup from "./img/cornsup.png";
+import vegetablesalad from "./img/vegetablesalad.png";
+import salmonsteam from "./img/salmonsteam.png";
+
 export const menu = [
     {
         id: "m1",
         name: "Avocado Salad",
         time: 30,
         kcal: 90,
+        img: avocadosalad,
         inggredients: [
             "1 1⁄2 lbs shrimp, peeled & deveined",
             "1⁄2 cup oil",
@@ -27,6 +33,7 @@ export const menu = [
         name: "Corn Soup",
         time: 30,
         kcal: 90,
+        img: cornsup,
         inggredients: [
             "1 1⁄2 lbs shrimp, peeled & deveined",
             "1⁄2 cup oil",
@@ -50,6 +57,7 @@ export const menu = [
         name: "Vegetable Salad",
         time: 30,
         kcal: 90,
+        img: vegetablesalad,
         inggredients: [
             "1 1⁄2 lbs shrimp, peeled & deveined",
             "1⁄2 cup oil",
@@ -73,6 +81,79 @@ export const menu = [
         name: "Salmon Steam",
         time: 30,
         kcal: 90,
+        img: salmonsteam,
+        inggredients: [
+            "1 1⁄2 lbs shrimp, peeled & deveined",
+            "1⁄2 cup oil",
+            "1 egg, beaten",
+            "1 cup all-purpose flour",
+            "1⁄2 cup milk",
+            "3⁄4 teaspoon seasoning salt",
+            "1⁄4 teaspoon salt",
+            "oil (for deep frying)",
+        ],
+        directions: [
+            "Preheat oil to 350 degrees.",
+            "Combine 1/2 cup oil and egg; beat well.",
+            "Add remaining ingredients except oil for frying and stir until well blended.",
+            "Dip shrimp into batter to coat.",
+            "Drop shrimp into hot oil and fry for 30-60 seconds or until golden brown.",
+        ],
+    },
+    {
+        id: "m5",
+        name: "Salmon Steam",
+        time: 30,
+        kcal: 90,
+        img: salmonsteam,
+        inggredients: [
+            "1 1⁄2 lbs shrimp, peeled & deveined",
+            "1⁄2 cup oil",
+            "1 egg, beaten",
+            "1 cup all-purpose flour",
+            "1⁄2 cup milk",
+            "3⁄4 teaspoon seasoning salt",
+            "1⁄4 teaspoon salt",
+            "oil (for deep frying)",
+        ],
+        directions: [
+            "Preheat oil to 350 degrees.",
+            "Combine 1/2 cup oil and egg; beat well.",
+            "Add remaining ingredients except oil for frying and stir until well blended.",
+            "Dip shrimp into batter to coat.",
+            "Drop shrimp into hot oil and fry for 30-60 seconds or until golden brown.",
+        ],
+    },
+    {
+        id: "m6",
+        name: "Salmon Steam",
+        time: 30,
+        kcal: 90,
+        img: salmonsteam,
+        inggredients: [
+            "1 1⁄2 lbs shrimp, peeled & deveined",
+            "1⁄2 cup oil",
+            "1 egg, beaten",
+            "1 cup all-purpose flour",
+            "1⁄2 cup milk",
+            "3⁄4 teaspoon seasoning salt",
+            "1⁄4 teaspoon salt",
+            "oil (for deep frying)",
+        ],
+        directions: [
+            "Preheat oil to 350 degrees.",
+            "Combine 1/2 cup oil and egg; beat well.",
+            "Add remaining ingredients except oil for frying and stir until well blended.",
+            "Dip shrimp into batter to coat.",
+            "Drop shrimp into hot oil and fry for 30-60 seconds or until golden brown.",
+        ],
+    },
+    {
+        id: "m7",
+        name: "Salmon Steam",
+        time: 30,
+        kcal: 90,
+        img: salmonsteam,
         inggredients: [
             "1 1⁄2 lbs shrimp, peeled & deveined",
             "1⁄2 cup oil",
