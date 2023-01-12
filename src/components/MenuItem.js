@@ -1,10 +1,15 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import time from "../assets/icon/time.png";
 import kcal from "../assets/icon/kcal.png";
+import { useNavigation } from "@react-navigation/native";
 
 export default function MenuItem({ data }) {
+    const navigation = useNavigation();
+
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity
+            style={styles.container}
+            onPress={() => navigation.navigate("Detail", data)}>
             <Image
                 source={data.img}
                 style={styles.img}
@@ -22,7 +27,7 @@ export default function MenuItem({ data }) {
                 <View style={styles.line}></View>
                 <View style={styles.iconContainer}>
                     <Image
-                        source={time}
+                        source={kcal}
                         style={styles.icon}
                     />
                     <Text style={styles.text}>{`${data.kcal} kcal`}</Text>
@@ -34,7 +39,7 @@ export default function MenuItem({ data }) {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 20,
+        marginTop: 30,
         width: "45%",
         backgroundColor: "#fff",
         paddingHorizontal: 20,
@@ -55,7 +60,9 @@ const styles = StyleSheet.create({
     },
     img: {
         position: "absolute",
-        top: -50,
+        top: -100,
+        width: 200,
+        height: 200,
     },
     name: {
         fontSize: 16,

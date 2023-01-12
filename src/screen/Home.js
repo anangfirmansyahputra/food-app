@@ -25,7 +25,7 @@ export default function Home() {
                 renderItem={({ item }) => <MenuItem data={item} />}
                 keyExtractor={(item) => item.id}
                 numColumns={2}
-                columnWrapperStyle={{ justifyContent: "space-between", marginTop: 40 }}
+                columnWrapperStyle={{ justifyContent: "space-between", marginTop: 50 }}
                 contentContainerStyle={{ paddingHorizontal: 20 }}
                 ListFooterComponent={<View style={{ height: 20 }} />}
             />
